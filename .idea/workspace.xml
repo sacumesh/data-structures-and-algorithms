@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f755fbaf-765e-4526-8e80-6087aa3876b2" name="Changes" comment="setup">
-      <change afterPath="$PROJECT_DIR$/sorting-algorithms/src/MergeSort.java" afterDir="false" />
+    <list default="true" id="f755fbaf-765e-4526-8e80-6087aa3876b2" name="Changes" comment="implement less, isSorted">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sorting-algorithms/src/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sorting-algorithms/src/MergeSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Insertion">
+  <component name="RunManager" selected="Application.MergeSort">
     <configuration name="Insertion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Insertion" />
       <module name="sorting-algorithms" />
@@ -58,8 +59,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MergeSort" />
+      <module name="sorting-algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MergeSort" />
         <item itemvalue="Application.Insertion" />
         <item itemvalue="Application.Merge" />
         <item itemvalue="Application.Insertion" />
@@ -83,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693406356758</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implement less, isSorted">
+      <created>1693506806209</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693506806209</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,7 +113,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feature/insertion-sort" />
+                        <option value="feature/merge-sort" />
                       </list>
                     </value>
                   </entry>
@@ -111,7 +127,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup" />
+    <MESSAGE value="implement less, isSorted" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement less, isSorted" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
