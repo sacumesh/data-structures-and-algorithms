@@ -100,5 +100,39 @@ public class Deque<T> implements Iterable<T> {
     }
 
 
+    public static void main(String[] args) {
+        Deque<Integer> integers = new Deque<>();
+
+        // Test isEmpty() on an empty deque
+        assert integers.isEmpty();
+
+        integers.addFirst(1);
+        integers.addFirst(2);
+
+        // Test removeFirst() and assert the removed value
+        assert integers.removeFirst() == 2;
+        assert integers.removeFirst() == 1;
+
+        // Test addLast(), removeLast(), and assert the last value
+        integers.addLast(1);
+        integers.addLast(2);
+        assert integers.removeFirst() == 1;
+        assert integers.removeLast() == 2;
+
+
+        integers.addFirst(3);
+        integers.addLast(4);
+
+        // Test isEmpty() after adding elements
+        assert !integers.isEmpty();
+
+        // Test size() after adding elements
+        assert integers.size() == 2;
+
+        System.out.println("All assertions passed!");
+
+    }
+
+
 
 }

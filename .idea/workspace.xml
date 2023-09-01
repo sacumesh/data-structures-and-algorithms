@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f755fbaf-765e-4526-8e80-6087aa3876b2" name="Changes" comment="implement fixed size stack">
-      <change afterPath="$PROJECT_DIR$/data-structures/src/ResizingArrayLinkedList.java" afterDir="false" />
+    <list default="true" id="f755fbaf-765e-4526-8e80-6087aa3876b2" name="Changes" comment="implement ResizingArrayLinkedList">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/data-structures.iml" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/data-structures.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/src/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/src/Deque.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,23 +35,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-11&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "corretto-11",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/sorting-algorithms" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Insertion">
+  <component name="RunManager" selected="Application.Deque">
+    <configuration name="Deque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Deque" />
+      <module name="data-structures" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Insertion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Insertion" />
       <module name="sorting-algorithms" />
@@ -72,13 +81,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Deque" />
+      <item itemvalue="Application.Insertion" />
+      <item itemvalue="Application.Merge" />
+      <item itemvalue="Application.MergeSort" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Deque" />
         <item itemvalue="Application.MergeSort" />
         <item itemvalue="Application.Merge" />
         <item itemvalue="Application.Insertion" />
         <item itemvalue="Application.MergeSort" />
-        <item itemvalue="Application.Merge" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693594152275</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="implement ResizingArrayLinkedList">
+      <created>1693595533267</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693595533267</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,7 +196,8 @@
     <MESSAGE value="implement the iterable interface" />
     <MESSAGE value="implement deque data structure" />
     <MESSAGE value="implement fixed size stack" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement fixed size stack" />
+    <MESSAGE value="implement ResizingArrayLinkedList" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement ResizingArrayLinkedList" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
