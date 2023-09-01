@@ -1,4 +1,6 @@
+import javax.swing.*;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class LinkedListStack<T> implements Iterable<T> {
 
@@ -9,6 +11,24 @@ public class LinkedListStack<T> implements Iterable<T> {
     private class Node {
         T item;
         Node next;
+    }
+
+    private class ListIterator implements Iterator<T> {
+        private Node current = head;
+
+        @Override
+        public boolean hasNext() {
+            return current != null ;
+        }
+
+        @Override
+        public T next() {
+            if (!hasNext()) throw new NoSuchElementException();
+
+            T item = current.item;
+            current = current.next;
+            return item;
+        }
     }
 
     void push(T item) {
