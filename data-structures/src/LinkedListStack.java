@@ -32,6 +32,9 @@ public class LinkedListStack<T> implements Iterable<T> {
     }
 
     void push(T item) {
+        if (item == null) throw new IllegalArgumentException();
+
+
         Node oldHead = head;
         head = new Node();
         head.item = item;
@@ -39,6 +42,8 @@ public class LinkedListStack<T> implements Iterable<T> {
     }
 
     T pop() {
+        if (isEmpty()) throw new NoSuchElementException();
+
         T item = head.item;
         head = head.next;
         return  item;
@@ -56,6 +61,6 @@ public class LinkedListStack<T> implements Iterable<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return new ListIterator();
     }
 }
