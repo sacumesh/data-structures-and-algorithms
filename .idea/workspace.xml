@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f755fbaf-765e-4526-8e80-6087aa3876b2" name="Changes" comment="implement deque data structure">
-      <change afterPath="$PROJECT_DIR$/data-structures/src/FixedCapacityStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-structures/src/LinkedQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-structures/src/ResizingArrayStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/src/LinkedListStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/src/LinkedListStack.java" afterDir="false" />
+    <list default="true" id="f755fbaf-765e-4526-8e80-6087aa3876b2" name="Changes" comment="add throw exceptions to push and pop, and fix iterator">
+      <change afterPath="$PROJECT_DIR$/data-structures/src/FixedSizeStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +147,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feature/merge-sort" />
+                        <option value="feature/stack-and-queues" />
                       </list>
                     </value>
                   </entry>
