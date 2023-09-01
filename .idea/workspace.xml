@@ -47,7 +47,12 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.MergeSort">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sorting-algorithms" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Insertion">
     <configuration name="Insertion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Insertion" />
       <module name="sorting-algorithms" />
@@ -72,10 +77,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MergeSort" />
-        <item itemvalue="Application.Insertion" />
         <item itemvalue="Application.Merge" />
         <item itemvalue="Application.Insertion" />
-        <item itemvalue="Application.Insertion" />
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Application.Merge" />
       </list>
     </recent_temporary>
   </component>
