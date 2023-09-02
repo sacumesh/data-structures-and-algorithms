@@ -1,36 +1,34 @@
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class RandomizedQueue<T> implements Iterable<T> {
-
-    private final static int INIT_CAPACITY = 8;
+public class RandomizedQueue<Item> implements Iterable<Item> {
     private int N;
     private int first;
     private int last;
-    private T[] q;
+    private Item[] q;
 
     public RandomizedQueue() {
-
-        q = (T[]) new Object[INIT_CAPACITY];
+        q = (Item[]) new Object[1];
         first = 0;
         last = 0;
         N = 0;
-
     }
 
     public boolean isEmpty() {
         return N == 0;
     }
 
-    private int size() {
+    public int size() {
         return N;
     }
 
-    public void resize(int capacity) {
+    private void resize(int capacity) {
 
         assert capacity >= N;
 
-        T[] copy = (T[]) new Object[capacity];
+        Item[] copy = (Item[]) new Object[capacity];
         for (int i = 0; i < N; i++)
             copy[i] = q[(first + i) % q.length];
 
@@ -40,13 +38,13 @@ public class RandomizedQueue<T> implements Iterable<T> {
 
     }
 
-    public void swap(Object[] a, int i, int j) {
+    private void swap(Object[] a, int i, int j) {
         Object tmp = a[i];
         a[i] = a[j];
         a[j] = tmp;
     }
 
-    public void enqueue(T item) {
+    public void enqueue(Item item) {
         if (item == null) throw new IllegalArgumentException();
 
         if (N == q.length) resize(2 * q.length);
@@ -58,7 +56,7 @@ public class RandomizedQueue<T> implements Iterable<T> {
         ++N;
     }
 
-    public T dequeue() {
+    public Item dequeue() {
         if (isEmpty()) throw new NoSuchElementException();
 
         // random item to remove
@@ -66,7 +64,7 @@ public class RandomizedQueue<T> implements Iterable<T> {
 
         swap(q, first, k);
 
-        T item = q[first];
+        Item item = q[first];
         q[first++] = null;
         --N;
 
@@ -77,7 +75,7 @@ public class RandomizedQueue<T> implements Iterable<T> {
         return item;
     }
 
-    public T sample() {
+    public Item sample() {
         if (isEmpty()) throw new NoSuchElementException();
 
         int i = (first + StdRandom.uniformInt(N)) % q.length;
@@ -85,19 +83,20 @@ public class RandomizedQueue<T> implements Iterable<T> {
         return q[i];
     }
 
-    private void shuffle(Object[] a, int size, int first) {
-        for (int i = 1; i < size; ++i) {
-            int k = (first + StdRandom.uniformInt(i)) % q.length;
-            swap(a, i, k);
-        }
-    }
-
-    private class RandomizeIterator implements Iterator<T> {
+    private class RandomizeIterator implements Iterator<Item> {
 
         private int i = 0;
+        private Item[] copy;
 
         public RandomizeIterator() {
-            shuffle(q, N, first);
+            copy = (Item[]) new Object[q.length];
+
+            copy[0] = q[first];
+            for (int k = 1; k < N; ++k) {
+                int j = (first + k) % q.length;
+                copy[k] = q[j];
+                swap(copy, StdRandom.uniformInt(k), k);
+            }
         }
 
         @Override
@@ -106,14 +105,14 @@ public class RandomizedQueue<T> implements Iterable<T> {
         }
 
         @Override
-        public T next() {
+        public Item next() {
             if (!hasNext()) throw new NoSuchElementException();
-            return q[(first + i++) % q.length];
+            return copy[i++];
         }
     }
 
     @Override
-    public Iterator<T> iterator() {
+    public Iterator<Item> iterator() {
         return new RandomizeIterator();
     }
 
@@ -123,8 +122,13 @@ public class RandomizedQueue<T> implements Iterable<T> {
         for (int i = 0; i < 10; ++i)
             randomizedQueue.enqueue(i);
 
-        for (Integer integer: randomizedQueue) {
-            System.out.println(integer);
-        }
+        StdOut.println(randomizedQueue.dequeue());
+
+        StdOut.println(randomizedQueue.sample());
+
+        StdOut.println(randomizedQueue.isEmpty());
+
+        StdOut.println(randomizedQueue.size());
+
     }
 }
