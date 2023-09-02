@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f755fbaf-765e-4526-8e80-6087aa3876b2" name="Changes" comment="implement ResizingArrayLinkedList">
+    <list default="true" id="f755fbaf-765e-4526-8e80-6087aa3876b2" name="Changes" comment="implement Deque unit tests">
+      <change afterPath="$PROJECT_DIR$/data-structures/src/ResizingArrayQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/data-structures.iml" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/data-structures.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/src/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/src/Deque.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +38,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "corretto-11",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -51,7 +49,7 @@
       <recent name="$PROJECT_DIR$/sorting-algorithms" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Deque">
+  <component name="RunManager" selected="Application.ResizingArrayQueue">
     <configuration name="Deque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Deque" />
       <module name="data-structures" />
@@ -81,7 +79,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ResizingArrayQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ResizingArrayQueue" />
+      <module name="data-structures" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.ResizingArrayQueue" />
       <item itemvalue="Application.Deque" />
       <item itemvalue="Application.Insertion" />
       <item itemvalue="Application.Merge" />
@@ -89,11 +96,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ResizingArrayQueue" />
         <item itemvalue="Application.Deque" />
         <item itemvalue="Application.MergeSort" />
         <item itemvalue="Application.Merge" />
         <item itemvalue="Application.Insertion" />
-        <item itemvalue="Application.MergeSort" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693595533267</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="implement Deque unit tests">
+      <created>1693610903173</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1693610903173</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,7 +211,8 @@
     <MESSAGE value="implement deque data structure" />
     <MESSAGE value="implement fixed size stack" />
     <MESSAGE value="implement ResizingArrayLinkedList" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement ResizingArrayLinkedList" />
+    <MESSAGE value="implement Deque unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement Deque unit tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
