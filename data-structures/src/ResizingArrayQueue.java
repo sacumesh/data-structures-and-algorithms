@@ -24,9 +24,11 @@ public class ResizingArrayQueue<T> implements Iterable<T> {
 
     private void resize(int capacity) {
 
+        assert capacity >= N;
+
         T[] copy = (T[]) new Object[capacity];
 
-        for (int i = 0; i <= N; i++)
+        for (int i = 0; i < N; i++)
             copy[i] = q[(first + i) % q.length];
 
         q = copy;
