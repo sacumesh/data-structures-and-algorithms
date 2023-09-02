@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f755fbaf-765e-4526-8e80-6087aa3876b2" name="Changes" comment="implement Deque unit tests">
-      <change afterPath="$PROJECT_DIR$/data-structures/src/ResizingArrayQueue.java" afterDir="false" />
+    <list default="true" id="f755fbaf-765e-4526-8e80-6087aa3876b2" name="Changes" comment="fix resize loop count and add assertion">
+      <change afterPath="$PROJECT_DIR$/data-structures/src/StdRandom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/src/RandomizedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/src/RandomizedQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/src/ResizingArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/src/ResizingArrayQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,19 @@
       <recent name="$PROJECT_DIR$/sorting-algorithms" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ResizingArrayQueue">
+  <component name="RunManager" selected="Application.RandomizedQueue">
+    <configuration name="AmericanFlag" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.princeton.cs.algs4.AmericanFlag" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.princeton.cs.algs4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Deque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Deque" />
       <module name="data-structures" />
@@ -58,23 +72,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Insertion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Insertion" />
-      <module name="sorting-algorithms" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Merge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Merge" />
-      <module name="sorting-algorithms" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MergeSort" />
       <module name="sorting-algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomizedQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RandomizedQueue" />
+      <module name="data-structures" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,19 +95,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.AmericanFlag" />
+      <item itemvalue="Application.RandomizedQueue" />
       <item itemvalue="Application.ResizingArrayQueue" />
       <item itemvalue="Application.Deque" />
-      <item itemvalue="Application.Insertion" />
-      <item itemvalue="Application.Merge" />
       <item itemvalue="Application.MergeSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RandomizedQueue" />
+        <item itemvalue="Application.AmericanFlag" />
         <item itemvalue="Application.ResizingArrayQueue" />
         <item itemvalue="Application.Deque" />
         <item itemvalue="Application.MergeSort" />
-        <item itemvalue="Application.Merge" />
-        <item itemvalue="Application.Insertion" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +183,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693610903173</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="implement Queue with resizing array">
+      <created>1693665732073</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1693665732073</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix resize loop count and add assertion">
+      <created>1693666550190</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1693666550190</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,7 +233,9 @@
     <MESSAGE value="implement fixed size stack" />
     <MESSAGE value="implement ResizingArrayLinkedList" />
     <MESSAGE value="implement Deque unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement Deque unit tests" />
+    <MESSAGE value="implement Queue with resizing array" />
+    <MESSAGE value="fix resize loop count and add assertion" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix resize loop count and add assertion" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
