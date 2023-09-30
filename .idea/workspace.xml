@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f755fbaf-765e-4526-8e80-6087aa3876b2" name="Changes" comment="implement randomized queue">
-      <change afterPath="$PROJECT_DIR$/data-structures/src/Permutation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-structures/src/distinct.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/BreadFirstPaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/CC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/DepthFirstPaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/DiGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/testG.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/src/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/src/Deque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/src/RandomizedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/src/RandomizedQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/partition-algorithms" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,12 +55,20 @@
       <recent name="$PROJECT_DIR$/sorting-algorithms" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RandomizedQueue">
-    <configuration name="AmericanFlag" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.princeton.cs.algs4.AmericanFlag" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Insertion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Insertion" />
+      <module name="sorting-algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Graphs.Main" />
+      <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.princeton.cs.algs4.*" />
+          <option name="PATTERN" value="Graphs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,18 +76,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Deque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Deque" />
-      <module name="data-structures" />
-      <option name="VM_PARAMETERS" value="-ea" />
+    <configuration name="Merge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Merge" />
+      <module name="sorting-algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Permutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Permutation" />
-      <module name="data-structures" />
-      <option name="PROGRAM_PARAMETERS" value="10" />
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MergeSort" />
+      <module name="sorting-algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,28 +97,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResizingArrayQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ResizingArrayQueue" />
-      <module name="data-structures" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.AmericanFlag" />
-      <item itemvalue="Application.Permutation" />
+      <item itemvalue="Application.Insertion" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Merge" />
+      <item itemvalue="Application.MergeSort" />
       <item itemvalue="Application.RandomizedQueue" />
-      <item itemvalue="Application.ResizingArrayQueue" />
-      <item itemvalue="Application.Deque" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Application.Merge" />
+        <item itemvalue="Application.Insertion" />
         <item itemvalue="Application.RandomizedQueue" />
-        <item itemvalue="Application.Deque" />
-        <item itemvalue="Application.Permutation" />
-        <item itemvalue="Application.AmericanFlag" />
-        <item itemvalue="Application.ResizingArrayQueue" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +228,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feature/stack-and-queues" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -253,6 +254,27 @@
     <MESSAGE value="fix resize loop count and add assertion" />
     <MESSAGE value="implement randomized queue" />
     <option name="LAST_COMMIT_MESSAGE" value="implement randomized queue" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/data-structures/src/Graphs/BreadFirstPaths.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/data-structures/src/Graphs/Main.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/data-structures/src/Graphs/DepthFirstPaths.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
