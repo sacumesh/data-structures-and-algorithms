@@ -7,6 +7,31 @@ public class Main {
 
 
     public static void main(String[] args) {
+        testDGraph();
+    }
+
+
+    public static void testDGraph() {
+        File file = new File("data-structures/src/Graphs/testDG.txt");
+        try (Scanner scanner = new Scanner(file)) {
+
+            int V = scanner.nextInt();
+            int E = scanner.nextInt();
+            DiGraph G = new DiGraph(V);
+            for (int i = 0; i < E; i++) {
+                int v = scanner.nextInt();
+                int w = scanner.nextInt();
+                G.addEdge(v, w);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
+    public void testGraph() {
 
         File file = new File("data-structures/src/Graphs/testG.txt");
         try (Scanner scanner = new Scanner(file)) {
@@ -37,7 +62,7 @@ public class Main {
             System.out.println("cc----------");
             CC cc = new CC(G);
 
-            System.out.println(cc.count());
+            System.out.println(G);
 
         } catch (Exception e) {
             e.printStackTrace();

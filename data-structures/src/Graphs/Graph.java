@@ -38,9 +38,20 @@ public class Graph {
         return E;
     }
 
+    @Override
+    public String toString() {
 
+        StringBuilder sb  = new StringBuilder();
 
+        for (int v = 0; v < V; v++) {
+            for (int w: adj(v)) {
+                sb.append(v);
+                sb.append(" -> ");
+                sb.append(w);
+            }
+            sb.append("\n");
+        }
 
-
-
+        return sb.toString();
+    }
 }

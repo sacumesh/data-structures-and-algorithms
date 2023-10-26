@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f755fbaf-765e-4526-8e80-6087aa3876b2" name="Changes" comment="implement randomized queue">
-      <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/BreadFirstPaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/CC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/DepthFirstPaths.java" afterDir="false" />
+    <list default="true" id="f755fbaf-765e-4526-8e80-6087aa3876b2" name="Changes" comment="undirected graph representation algorithms">
+      <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/DepthFirstOrder.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/DiGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/testG.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/src/Graphs/testDG.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/src/Graphs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/src/Graphs/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/src/Graphs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/src/Graphs/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/src/Graphs/testG.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/src/Graphs/testG.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,16 +40,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-11&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "corretto-11",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.build.android"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/sorting-algorithms" />
@@ -214,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693671828879</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="undirected graph representation algorithms">
+      <created>1696094340680</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1696094340680</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +261,8 @@
     <MESSAGE value="implement Queue with resizing array" />
     <MESSAGE value="fix resize loop count and add assertion" />
     <MESSAGE value="implement randomized queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement randomized queue" />
+    <MESSAGE value="undirected graph representation algorithms" />
+    <option name="LAST_COMMIT_MESSAGE" value="undirected graph representation algorithms" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -265,7 +274,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/data-structures/src/Graphs/Main.java</url>
-          <line>31</line>
+          <line>10</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
